@@ -41,6 +41,10 @@ function App() {
             artist={song.artist} 
             title={song.title} 
             img={song.img}
+            id={song.id}
+            currentSong={currentSong}
+            setCurrentSong={setCurrentSong}
+            songs={songs}
           />
           })}
         </div>

@@ -3,10 +3,27 @@ import './card.css'
 export const Card = ({
     title,
     artist,
-    img
+    img,
+    id,
+    currentSong,
+    setCurrentSong,
+    songs
 }) => {
+
+    const setSong = () => {
+        if(id === 0) {
+            setCurrentSong(songs[6])
+        } else {
+            setCurrentSong(songs[id -1])
+        }
+    
+    }
+
   return (
-    <div className='card'>
+    <div 
+    className={currentSong.id === id ? 'card bg-active' : 'card'}
+    onClick={setSong}
+    >
           <img 
             className='cover-image'
             src={img} 
