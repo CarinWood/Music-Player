@@ -14,7 +14,7 @@ import jeans from "../assets/audio/jeans.mp3"
 import young from "../assets/audio/young.mp3"
 import coast from "../assets/audio/coast.mp3"
 
-export const songs = [
+export const songList = [
 {
     id: 1,
     title: 'Summertime Sadness',

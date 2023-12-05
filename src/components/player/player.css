@@ -1,0 +1,61 @@
+.screen {
+    width: 260px;
+    height: 260px;
+    border: 2px solid rgb(30, 30, 138);
+    border-radius: 15px;
+    border: 5px solid rgb(107, 107, 188);
+}
+
+.screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 11.2px;
+}
+
+.screen-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist {
+    font-size: medium;
+}
+
+.title {
+    font-size: small;
+    margin-top: 3px;
+    opacity: 0.6;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.back, .forward {
+    font-size: 25px;
+    margin: 0px 18px;
+    cursor: pointer;
+}
+
+.back:active, .forward:active {
+    opacity: 0.3;
+}
+
+.play {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.play:active {
+    transform: translateY(2px);
+}
