@@ -59,3 +59,20 @@
 .play:active {
     transform: translateY(2px);
 }
+
+@media screen and (max-width: 772px) {
+    .screen {
+        width: 150px;
+        height: 150px;
+    }
+
+    .screen-text {
+        margin-top: 18px;
+    }
+
+    .controls {
+        margin-bottom: 0px;
+        margin: 18px 0px 0px 0px
+    }
+}
+

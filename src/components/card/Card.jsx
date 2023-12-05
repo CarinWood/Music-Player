@@ -7,7 +7,9 @@ export const Card = ({
     id,
     currentSong,
     setCurrentSong,
-    songs
+    songs,
+    setShowPauseBtn,
+    setIsPlaying
 }) => {
 
     const setSong = () => {
@@ -16,7 +18,9 @@ export const Card = ({
         } else {
             setCurrentSong(songs[id -1])
         }
-    
+    setShowPauseBtn(false)
+    setIsPlaying(false)
+
     }
 
   return (

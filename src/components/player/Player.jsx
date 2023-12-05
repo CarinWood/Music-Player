@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './player.css'
 import { FaCirclePlay, FaCirclePause } from "react-icons/fa6";
 import { IoMdSkipForward } from "react-icons/io";
@@ -10,10 +9,12 @@ export const Player = ({
     setIsPlaying,
     audioElem,
     currentSong,
-    setCurrentSong
+    setCurrentSong,
+    showPauseBtn,
+    setShowPauseBtn
 }) => {
 
-    const [showPauseBtn, setShowPauseBtn] = useState(false)
+   
 
   const playSong = () => {
     setIsPlaying(true)

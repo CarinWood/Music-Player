@@ -9,6 +9,7 @@ function App() {
   const [songs, setSongs] = useState(songList)
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentSong, setCurrentSong] = useState(songs[0])
+  const [showPauseBtn, setShowPauseBtn] = useState(false)
   const audioElem = useRef()
 
   useEffect(() => {
@@ -32,6 +33,8 @@ function App() {
         audioElem={audioElem}
         currentSong={currentSong}
         setCurrentSong={setCurrentSong}
+        setShowPauseBtn={setShowPauseBtn}
+        showPauseBtn={showPauseBtn}
         />
         </div>
         <div className='play-list'>
@@ -45,6 +48,8 @@ function App() {
             currentSong={currentSong}
             setCurrentSong={setCurrentSong}
             songs={songs}
+            setShowPauseBtn={setShowPauseBtn}
+            setIsPlaying={setIsPlaying}
           />
           })}
         </div>
