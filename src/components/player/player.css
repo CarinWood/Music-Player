@@ -64,7 +64,7 @@
     .screen {
         width: 150px;
         height: 150px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
     .screen-text {
@@ -74,6 +74,14 @@
     .controls {
         margin-bottom: 0px;
         margin: 18px 0px 0px 0px
+    }
+
+    .back, .forward {
+        margin: 0px 23px;
+    }
+
+    .play {
+        font-size: 40px;
     }
 }
 
